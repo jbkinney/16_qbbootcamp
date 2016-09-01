@@ -42,7 +42,7 @@ rm -r testdir
 ls
 
 # Create a file with text in it
-echo "I'm a file!" > test_1.txt
+echo "I'm a file." > test_1.txt
 ls -lah
 
 # Display file
@@ -61,22 +61,32 @@ ls
 #
 
 # Grab a file from the internet
-curl "http://files.rcsb.org/view/1ema.pdb" 
+curl "http://files.rcsb.org/view/1ema.pdb"
+
 # oops, we have to save it to some name
 curl "http://files.rcsb.org/view/1ema.pdb" -o 1ema.pdb
 
 # Use less to view file
+# G: bottom of file
+# g: top of file
+# [space]: page down
+# q: quit
 less 1ema.pdb
 
 # View the first 10 lines of a file
 head 1ema.pdb
 
-# View the last 20 lines
+# View the first 20 lines
 head -n 20 1ema.pdb
+
+# View the last 10 lines
+tail 1ema.pdb
 
 # Compute size of file
 wc 1ema.pdb
 wc -l 1ema.pdb
+wc *
+wc *.pdb
 
 # Find only lines that begin with atom
 grep ATOM 1ema.pdb
