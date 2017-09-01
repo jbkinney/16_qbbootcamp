@@ -3,7 +3,6 @@ pwd
 
 # To view files in the current directory
 ls
-ls -l
 ls -lah
 
 # To view files in another directory
@@ -31,7 +30,7 @@ pwd
 ls
 
 # Change to ~/Desktop/qb_bootcamp directory
-cd ~/Desktop/qb_bootcamp
+cd ~/Desktop/17_qbbootcamp
 pwd
 
 # Delete a directory
